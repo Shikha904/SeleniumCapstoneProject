@@ -40,7 +40,6 @@ public class CustomerPage {
 		addNew_Btn.click();
 		AddCustomerPage addCustomerPage = new AddCustomerPage(driver);
 		return addCustomerPage;
-		
 	}
 
 }

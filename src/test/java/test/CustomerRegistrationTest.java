@@ -17,8 +17,6 @@ public class CustomerRegistrationTest extends BaseTest {
 		AddCustomerPage addCustomerPage= customerPage.clickAddNewBtn();
 		verifyApplicationTitle(Constants.nopCommerceAddNewCustTitle);
 		addCustomerPage.addNewCustomer("sampletest@gmail.com", "sampletesting", "test", "test", "04/10/1970", "Incedo");
-		String alertMesg = addCustomerPage.getConfirmationMsg();
-		System.out.println(alertMesg);
 		loginpage.clickLogout();
 		verifyApplicationTitle(Constants.nopCommerceHomePageTitle);
 		
